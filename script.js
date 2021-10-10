@@ -33,4 +33,10 @@ const createHeart = (e) => {
 
   heart.style.top = `${yInside}px`
   heart.style.left = `${xInside}px`
+
+  loveMe.appendChild(heart)
+
+  times.innerHTML = ++timesClicked
+
+  setTimeout(() => heart.remove(), 1000)
 }
